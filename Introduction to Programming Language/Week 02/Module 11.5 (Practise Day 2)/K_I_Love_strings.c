@@ -1,37 +1,39 @@
-#include<stdio.h>
-#include<string.h>
+
+#include <stdio.h>
+#include <string.h>
+
 int main()
 {
-    int t;
-    scanf("%d",&t);
-    while (t--)
-    {
-        char s[55],t[55];
-        scanf("%s %s",s,t);
-        int len_s = strlen(s);
-        int len_t = strlen(t);
+    int n;
+    scanf("%d", &n);
 
-        int i ;
-        for(i= 0; i<len_s && i<len_t;i++)
+    while(n--)
+    {
+        char s[51], t[51];
+
+        scanf("%s %s", s, t);
+
+        int len1 = strlen(s);
+        int len2 = strlen(t);
+
+        int max;
+
+        if(len1 > len2)
+            max = len1;
+        else
+            max = len2;
+
+        for(int i = 0; i < max; i++)
         {
-            printf("%c%c",s[i],t[i]);
+            if(i < len1)
+                printf("%c", s[i]);
+
+            if(i < len2)
+                printf("%c", t[i]);
         }
-        if(i<len_s)
-        {
-            for( ;i<len_s;i++)
-            {
-                printf("%c",s[i]);
-            }
-        }
-        if(i<len_t)
-        {
-            for( ;i<len_t; i++)
-            {
-                printf("%c",t[i]);
-            }
-        }
+
         printf("\n");
     }
-    
+
     return 0;
 }
