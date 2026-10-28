@@ -8,11 +8,13 @@ int main()
 
     if(value < 0)
     {
-        printf("A small");
+        printf("A small\n");
+        printf("%s",a); // small string print hobe
     }
     else if (value > 0)
     {
-        printf("B small");
+        printf("B small\n");
+        printf("%s",b);
     }
     else
     {
