@@ -1,30 +1,22 @@
 #include<stdio.h>
+
 int even_odd(int n)
 {
-     if(n%2==0)
-     {
-        return 1;
-     }
-     else
-     {
-        return 0;
-     }
+    return n % 2 == 0;
 }
 
 int main()
 {
     int n;
     scanf("%d",&n);
-
-    int result = even_odd(n);
-
-    if(result==1)
+    
+    if(even_odd(n))
     {
-        printf("Even Number\n");
+        printf("Even");
     }
     else
     {
-        printf("Odd Number\n");
+        printf("Odd");
     }
     return 0;
 }
