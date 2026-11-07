@@ -1,1 +1,2 @@
-100
+Array er 0th index er address: 000000FB1E7FF730
+Array er nam: 000000FB1E7FF730
