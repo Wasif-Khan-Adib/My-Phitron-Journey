@@ -4,7 +4,7 @@
 void fun (char s[])
 {
     printf("%s\n",s);
-    printf("%d",strlen(s));
+    //printf("%d",strlen(s));
 }
 int main()
 {
