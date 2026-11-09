@@ -2,41 +2,57 @@
 int main()
 {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
 
-    for (int i = 0; i<2*n-1;i++)
+    int hash = 1;
+    int space = n - 1;
+
+    for (int i = 1; i <= n; i++)
     {
-        int level;
-        
-        if (i < n)
+        for (int j = 1; j <= space; j++)
         {
-            level = i;
+            printf(" ");
         }
-            
-        else
+        for (int j = 1; j <= hash; j++)
+        {
+            if (i % 2 != 0)
             {
-                level =2*n-2- i;
+                printf("#");
             }
-
-        int count =2*level+1;
-        for (int j = 0; j < n - 1 - level; j++)
-        {
-            printf("  ");
-        }
-        char ch;
-        if (i % 2 == 0)
-        {
-             ch = '#';
-        }
-        else
-        {
-            ch = '-';
-        }
-        for (int j = 0; j < count; j++)
-        {
-            printf("%c",ch);
+            else
+            {
+                printf("-");
+            }
         }
         printf("\n");
+        hash += 2;
+        space--;
     }
+
+    int hash1 = hash - 4;
+    int space1 = 1;
+
+    for (int i = n - 1; i >= 1; i--)
+    {
+        for (int j = 1; j <= space1; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 1; j <= hash1; j++)
+        {
+            if (i % 2 != 0)
+            {
+                printf("#");
+            }
+            else
+            {
+                printf("-");
+            }
+        }
+        printf("\n");
+        hash1 -= 2;
+        space1++;
+    }
+
     return 0;
 }
