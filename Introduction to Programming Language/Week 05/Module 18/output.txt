@@ -1,1 +1,1 @@
-Not Zero Matrix
+This is not a primary diagonal matrix
