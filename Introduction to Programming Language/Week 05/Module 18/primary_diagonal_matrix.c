@@ -22,13 +22,19 @@ int main()
         {
             for (int j = 0; j < c; j++)
             {
-
-                if (i != j) // we are now at outside diagonal
+                if (i == j)
                 {
-
-                    if (a[i][j] != 0)
+                    // we are now at primary diagonal
+                }
+                else
+                {
+                    if (i != j) // we are now at outside diagonal
                     {
-                        is_diagonal = false;
+
+                        if (a[i][j] != 0)
+                        {
+                            is_diagonal = false;
+                        }
                     }
                 }
             }
