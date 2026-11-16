@@ -22,33 +22,31 @@ int main()
         {
             for (int j = 0; j < c; j++)
             {
-                if (i+j == r-1)
+                if (i + j == r - 1)
                 {
                     // we are now at secondary diagonal
                 }
                 else
                 {
                     // we are now at outside diagonal
-                    if(i != j) 
+                    if (i != j)
                     {
 
                         if (a[i][j] != 0)
                         {
                             is_diagonal = false;
                         }
-                 
                     }
-                }   
+                }
             }
-
-            if (is_diagonal == true)
-            {
-                printf("This is a secondary diagonal matrix\n");
-            }
-            else
-            {
-                printf("This is not a secondary diagonal matrix\n");
-            }
+        }
+        if (is_diagonal == true)
+        {
+            printf("This is a secondary diagonal matrix\n");
+        }
+        else
+        {
+            printf("This is not a secondary diagonal matrix\n");
         }
     }
     else

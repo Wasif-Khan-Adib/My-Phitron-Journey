@@ -38,15 +38,14 @@ int main()
                     }
                 }
             }
-
-            if (is_diagonal == true)
-            {
-                printf("This is a primary diagonal matrix\n");
-            }
-            else
-            {
-                printf("This is not a primary diagonal matrix\n");
-            }
+        }
+        if (is_diagonal == true)
+        {
+            printf("This is a primary diagonal matrix\n");
+        }
+        else
+        {
+            printf("This is not a primary diagonal matrix\n");
         }
     }
     else
