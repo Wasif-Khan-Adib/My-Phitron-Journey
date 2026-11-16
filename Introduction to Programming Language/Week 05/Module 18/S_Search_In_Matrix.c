@@ -15,23 +15,26 @@ int main()
     }
 
     int element;
-    scanf("%d",&element);
+    scanf("%d", &element);
 
     int flag = 0;
-    for (int i = 0; i < r; i++) 
+    for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
         {
-            if(a[i][j]==element)
+            if (a[i][j] == element)
             {
                 flag = 1;
-                printf("will not take number\n");
             }
         }
     }
-    if(flag == 0)
+    if (flag == 0)
     {
         printf("will take number\n");
+    }
+    else
+    {
+        printf("will not take number\n");
     }
     return 0;
 }
