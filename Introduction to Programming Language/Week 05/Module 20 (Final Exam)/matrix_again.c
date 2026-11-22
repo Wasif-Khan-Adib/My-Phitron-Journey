@@ -16,14 +16,14 @@ int main()
     
     for(int i = 0; i<c; i++)
     {
-        printf("%d ",a[r-1][i]);
+        printf("%d ",a[r-1][i]); //index jehetu 0 theke start hocche, tai last row r-1 hobe
        
     }
     printf("\n");
 
     for(int i = 0; i<r; i++)
     {
-        printf("%d ",a[i][c-1]);
+        printf("%d ",a[i][c-1]); // ekoi vabe colum
     }
     return 0;
 }
