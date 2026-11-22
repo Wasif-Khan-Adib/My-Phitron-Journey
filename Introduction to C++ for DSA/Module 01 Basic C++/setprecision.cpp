@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    double d = 23.45676;
+    double d = 23.245676;
     //cout << d<< endl;
 
     cout << fixed << setprecision(2) << d << endl;  // doshomid er por koyta value chai seta setprecision diye korte hobe
