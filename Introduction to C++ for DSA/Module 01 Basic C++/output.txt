@@ -1,1 +1,4 @@
-Hello World!
+10 A 34.56
+10 A
+34.56
+My favourite number is 10
