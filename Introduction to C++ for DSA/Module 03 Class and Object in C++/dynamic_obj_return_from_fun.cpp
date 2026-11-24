@@ -26,7 +26,7 @@ int main()
 { 
     Student* p = fun();
    
-    cout << p->roll << " " << p->cls << " " << p->gpa << endl;
+    cout << (*p).roll << " " << p->cls << " " << p->gpa << endl;
     return 0;
 }
 

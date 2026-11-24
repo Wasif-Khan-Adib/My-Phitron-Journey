@@ -3,23 +3,23 @@ using namespace std;
 
 class Student
 {
-    public:
+public:
     int roll;
     int cls;
     double gpa;
 
-    Student(int roll, int cls, double gpa)
+    Student(int r, int c, double g)
     {
-        this->roll = roll;
-        this->cls = cls;
-        this->gpa = gpa;
+        roll = r;
+        cls = c;
+        gpa = g;
     }
 };
 
 int main()
 {
-    Student rahim(45,5,3.2);
-    Student* karim = new Student (10,5,4.56);
+    Student rahim(45, 5, 3.2);
+    Student *karim = new Student(10, 5, 4.56);
     cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
     cout << karim->roll << " " << karim->cls << " " << karim->gpa << endl;
     return 0;

@@ -11,7 +11,7 @@ int main()
 {
     Student a, b;
 
-    cin.getline(a.name, 100);
+    cin.getline(a.name, 100); // Adib Khan -> space ase
     cin >> a.roll >> a.gpa;
     cin.ignore(); // enter ke ignore korar jonno 
     cin.getline(b.name, 100);
