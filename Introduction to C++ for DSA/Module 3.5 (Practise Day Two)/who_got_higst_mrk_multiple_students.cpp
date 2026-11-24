@@ -39,7 +39,7 @@ int main()
         st[i] = new Student(name, roll, section, math_marks, cls);
     }
 
-    int mx = -1;
+    int mx = INT_MIN;
     int index = 0;
 
     for (int i = 0; i < n; i++)
