@@ -45,6 +45,7 @@ int main()
     {
         cout << st2.name << endl;
     }
+    
     else
     {
         cout << st3.name << endl;
